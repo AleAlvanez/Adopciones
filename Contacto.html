@@ -14,7 +14,34 @@
 			<li><a href="casosExitosos.html#">Anecdotas</a></li>
 		</ul>
 	</nav>
-
+<section>
+	<fieldset>
+	<legend> Suscripcion a informes </legend>
+	<p>Para que no te pierdas ningun suceso dentro de nuestro centro mas cercano a tu localidad</p>
+	<form action="guardar.php" method="get">
+    <p>Nombre: <input type="text" name="nombre" size="40" /></p>
+    <p>Ciudad:</p>
+    <select name="ciudades" >
+    <option selected value="0"> Elige una opción </option>
+       <optgroup label="Centro de Adopciones"> 
+       <option value="1">001 Atlacomulco</option> 
+       <option value="2">002 Toluca </option> 
+       <option value="3">003 Texcoco</option> 
+     </optgroup> 
+     </select>
+     <p>Correo: <input type="email" name="nombre" size="45" /></p>
+     <p>Sobre que tema desea los informes:
+    <input type="radio" name="inf" value="i1"> Adopciones (tramite)
+    <input type="radio" name="inf" value="i2"> Rescates recientes
+	<input type="radio" name="inf" value="i3"> Formar parte de la asociacion
+     </p>
+  <p>
+    <input type="submit" value="Enviar" />
+    <input type="reset" value="Borrar" />
+  </p>
+</form>
+</fieldset>
+</section>
 	<div>
 	<h1>Contactanos al telefono:</h1>
 	<h2>712-222-35-12</h2>
