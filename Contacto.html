@@ -2,10 +2,15 @@
 <html lang="es">
 <head>
 	<meta charset="utf8">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 	<title> Adopta un amigo </title>
 </head>
 <body>
-<h1 style="color:purple;" align="center">Bienvenido a Adopciones "Un nuevo hogar"</h1>
+<header>
+<h1 style="color:pink;" align="center">Bienvenido a Adopciones "Un nuevo hogar"</h1>
+<img src="logo2.png" >
+</header>
 <nav>
 		<ul>
 			<li><a href="Pagina.html#">Inicio</a></li>
@@ -20,7 +25,7 @@
 	<p>Para que no te pierdas ningun suceso dentro de nuestro centro mas cercano a tu localidad</p>
 	<form action="guardar.php" method="get">
     <p>Nombre: <input type="text" name="nombre" size="40" /></p>
-    <p>Ciudad:</p>
+    <p>Ciudad:
     <select name="ciudades" >
     <option selected value="0"> Elige una opción </option>
        <optgroup label="Centro de Adopciones"> 
@@ -28,16 +33,16 @@
        <option value="2">002 Toluca </option> 
        <option value="3">003 Texcoco</option> 
      </optgroup> 
-     </select>
+     </select></p>
      <p>Correo: <input type="email" name="nombre" size="45" /></p>
      <p>Sobre que tema desea los informes:
-    <input type="radio" name="inf" value="i1"> Adopciones (tramite)
-    <input type="radio" name="inf" value="i2"> Rescates recientes
-	<input type="radio" name="inf" value="i3"> Formar parte de la asociacion
+    <input type="radio" name="inf" value="i1"style="width:15px;height:15px"> Adopciones (tramite)
+    <input type="radio" name="inf" value="i2" style="width:15px;height:15px"> Rescates recientes
+	<input type="radio" name="inf" value="i3" style="width:15px;height:15px"> Formar parte de la asociacion
      </p>
   <p>
-    <input type="submit" value="Enviar" />
-    <input type="reset" value="Borrar" />
+    <input id="enviar" type="submit" value="Enviar" />
+    <input id="borrar" type="reset" value="Borrar" />
   </p>
 </form>
 </fieldset>
